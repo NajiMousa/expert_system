@@ -82,11 +82,11 @@ st.title("نظام خبير لتحليل بيانات المحولات")
 st.write("قم بإدخال معطيات المحول")
 
 # إدخال المستخدم
-رقم_المحول = st.selectbox("اختار رقم المحول", data["رقم المحول"])
-القدرة = st.number_input("أدخل قدرة المحول", min_value=0, max_value=100, value=60)
+رقم_المحول = st.selectbox("اختار المحول", data["المحول"])
+القدرة = st.number_input("أدخل قدرة المحول", min_value=160, max_value=1250, value=400)
 
 # تطبيق القواعد على المدخلات
-input_data = pd.DataFrame({"رقم المحول": [رقم_المحول], "القدرة": [القدرة]})
+input_data = pd.DataFrame({"المحول": [المحول], "القدرة": [القدرة]})
 results = inference_engine(input_data, rules)
 
 # عرض النتائج
