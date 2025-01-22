@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 
 # تحميل البيانات مع تحديد الترميز
-summer_data = pd.read_csv('transformer_data_summer.csv', encoding='utf-8')
+summer_data = pd.read_csv('data/transformer_data_summer.csv', encoding='utf-8')
 
 # عرض أول 5 صفوف للتأكد من البيانات
 print(summer_data.head())
